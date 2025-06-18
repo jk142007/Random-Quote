@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Quote</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .quote-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .quote-box p {
+      font-size: 1.4rem;
+      color: #333;
+    }
+    .quote-box h4 {
+      margin-top: 10px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="quote-box">
+    <p>"{{ quote.content }}"</p>
+    <h4>— {{ quote.author }}</h4>
+  </div>
+</body>
+</html>
