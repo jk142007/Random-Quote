@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>📜 Random Quote</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1d2b64, #f8cdda);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      flex-direction: column;
+      padding: 30px;
+    }
+
+    .quote-box {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px 40px;
+      border-radius: 15px;
+      max-width: 700px;
+      text-align: center;
+      box-shadow: 0 0 20px #00ffff66;
+    }
+
+    h1 {
+      color: #00ffff;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    .quote {
+      font-size: 1.5rem;
+      line-height: 1.6;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    .author {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #00ffff;
+      background: #00000088;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      background: #00ffff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="quote-box">
+    <h1>📜 Random Quote</h1>
+    <p class="quote">“{{ quote }}”</p>
+    <p class="author">— {{ author }}</p>
+    <a href="/quote">🔄 New Quote</a>
+    <a href="/">← Back to Dashboard</a>
+  </div>
+</body>
+</html>
